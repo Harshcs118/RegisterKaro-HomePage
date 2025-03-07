@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ===== Base Styles ===== */
+:root {
+  --primary-blue: #2563eb;
+  --primary-indigo: #4f46e5;
+  --gray-100: #f3f4f6;
+  --gray-300: #d1d5db;
+  --gray-600: #4b5563;
+  --gray-700: #374151;
+}
+
+/* ===== Responsive Adjustments ===== */
+
+/* 320px - Small Mobile Devices */
+@media (min-width: 320px) {
+  .hero-section {
+    background-size: 12px 12px;
+  }
+
+  .service-card {
+    @apply p-3;
+  }
+
+  .btn-primary-gradient {
+    @apply px-4 py-2 text-sm;
+  }
+}
+
+/* 375px - Medium Mobile Devices */
+@media (min-width: 375px) {
+  .hero-section {
+    background-size: 14px 14px;
+  }
+
+  .service-card {
+    @apply p-4;
+  }
+
+  .btn-primary-gradient {
+    @apply px-5 py-2.5 text-base;
+  }
+}
+
+/* 425px - Large Mobile Devices */
+@media (min-width: 425px) {
+  .hero-section {
+    background-size: 16px 16px;
+  }
+
+  .service-card {
+    @apply p-5;
+  }
+
+  .btn-primary-gradient {
+    @apply px-6 py-3 text-lg;
+  }
+}
+
+/* 768px - Tablets */
+@media (min-width: 768px) {
+  .hero-section {
+    background-size: 24px 24px;
+  }
+
+  .service-card {
+    @apply p-6;
+  }
+
+  .btn-primary-gradient {
+    @apply px-8 py-4 text-xl;
+  }
+}
