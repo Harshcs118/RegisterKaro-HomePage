@@ -149,12 +149,12 @@ const HomePage = () => {
 
        {/* Hero Section */}
  {/* Hero Section */}
-<section className="hero-section relative pt-32 md:pt-40 pb-20 md:pb-32 overflow-hidden">
+ <section className="hero-section relative pt-32 md:pt-40 pb-20 md:pb-32 overflow-hidden ">
   <div className="absolute inset-0 bg-pattern opacity-5 z-0"></div>
   <div className="container mx-auto px-4 md:px-6 relative z-10">
-    <div className="flex flex-col md:flex-row items-center">
+    <div className="flex flex-col md:flex-row items-center gap-8"> 
       {/* Left Column */}
-      <div className="px-2 w-full md:w-1/2 mb-12 md:mb-0">
+      <div className="w-full md:w-1/2 mb-12 md:mb-0">
         <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight">
           <span className="block">Start Your Business</span>
           <span className="block gradient-text">The Right Way</span>
@@ -204,35 +204,35 @@ const HomePage = () => {
         </div>
 
         {/* Stats Section */}
-        <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+        <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 text-center">
           <div className="p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition-all">
-            <div className="font-bold text-2xl text-blue-600">10,000+</div>
-            <div className="text-gray-600">Happy Clients</div>
+            <div className="font-bold text-xl sm:text-2xl text-blue-600">10,000+</div>
+            <div className="text-sm sm:text-base text-gray-600 mt-2">Happy Clients</div>
           </div>
           <div className="p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition-all">
-            <div className="font-bold text-2xl text-blue-600">15+</div>
-            <div className="text-gray-600">Years Experience</div>
+            <div className="font-bold text-xl sm:text-2xl text-blue-600">15+</div>
+            <div className="text-sm sm:text-base text-gray-600 mt-2">Years Experience</div>
           </div>
           <div className="p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition-all">
-            <div className="font-bold text-2xl text-blue-600">50+</div>
-            <div className="text-gray-600">Expert Team</div>
+            <div className="font-bold text-xl sm:text-2xl text-blue-600">50+</div>
+            <div className="text-sm sm:text-base text-gray-600 mt-2">Expert Team</div>
           </div>
           <div className="p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition-all">
-            <div className="font-bold text-2xl text-blue-600">100%</div>
-            <div className="text-gray-600">Success Rate</div>
+            <div className="font-bold text-xl sm:text-2xl text-blue-600">100%</div>
+            <div className="text-sm sm:text-base text-gray-600 mt-2">Success Rate</div>
           </div>
         </div>
       </div>
 
       {/* Right Column */}
-      <div className="px-2 w-full md:w-1/2 relative">
+      <div className="w-full md:w-1/2 relative lg:-mt-12"> 
         <div className="relative z-10 rounded-3xl overflow-hidden shadow-2xl transform transition-all duration-300 hover:scale-105">
           <img
             src="https://picsum.photos/600/500?business" // Random business-related image from Picsum
             alt="Business Registration"
-            className="w-full h-auto"
+            className="w-full h-auto" 
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end">
+          <div className="absolute inset-4 bg-gradient-to-t from-black/60 to-transparent flex items-end">
             <div className="p-6">
               <span className="bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-medium">Featured</span>
               <h3 className="text-white text-xl font-bold mt-2">Private Limited Company Registration</h3>

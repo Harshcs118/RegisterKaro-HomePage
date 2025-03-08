@@ -136,3 +136,29 @@
       @apply p-4;
     }
   }
+
+  @media (min-width: 768px) {
+    .md\:grid-cols-4 {
+      grid-template-columns: repeat(4, minmax(150px, 1fr)); /* Ensures each column has a minimum width of 150px */
+      column-gap: 2rem; /* Increases the horizontal gap between cards */
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .md\:grid-cols-4 {
+      gap: 1rem; /* Reduce the gap between cards for 1024px screens */
+    }
+  
+    .lg\:-mt-12 {
+      margin-top: -2rem; /* Shift the right image up by 3rem on 1024px screens */
+    
+    }
+
+    .lg\:w-\[90\%\] {
+      width: 90%; /* Reduce image width for 1024px screens */
+    }
+  
+    .lg\:h-\[90\%\] {
+      height: 90%; /* Reduce image height for 1024px screens */
+    }
+  }
